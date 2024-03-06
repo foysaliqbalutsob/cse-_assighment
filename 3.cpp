@@ -1,16 +1,24 @@
 #include<iostream>
 using namespace std;
-int k = 100;
+
+int C = 45;
+
 int main()
 {
-    int k = 50;
-    {
-        int k = 20;
-        cout<<"The value of k in inner block = "<<k<<endl;
-        cout<<"The global value of k is = "<<::k<<endl;
-    }
-    cout<<"The value of k in outer block is = "<<k<<endl;
-    cout<<"The global value of k is = "<<::k<<endl;
-    return 0;
+    int A,B,C;
 
+    cout<<"Ener the value of A "<<endl;
+    cin>>A;
+
+    cout<<"Ener the value of B "<<endl;
+    cin>>B;
+
+    C = A + B; 
+   
+    cout<<"the sum is : "<<C<<endl;
+    cout<<"the global c is "<<::C<<endl;
+
+
+
+    return 0;
 }
